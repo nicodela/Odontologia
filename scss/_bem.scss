@@ -1,0 +1,41 @@
+.pacientes{
+    .pacientes_julio{
+        display:flex;
+        flex-direction:column;
+        align-items: flex-start;
+        color: $texto;
+        width: 300px;
+
+    }
+    .pacientes_julio--mirta{
+        display:flex;
+        flex-direction:column;
+        align-items: flex-start;
+        width: 300px;
+
+    }
+}
+.box{
+    .box_1{
+        font-family: $font;
+        font-weight: $font-regular;
+        color: $texto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+       
+        
+        }
+     .box_1--2{
+        font-family: $font;
+        font-weight: $font-regular;
+        color: $textoterceario;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+
+     }   
+        
+    }

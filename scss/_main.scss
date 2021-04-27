@@ -1,0 +1,150 @@
+
+@mixin imagenes {
+    background-image: url(../media/carillas.jfif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0px;
+}
+.mainServicios{
+    section{
+
+        ul{
+            display:flex;
+            flex-direction:column-reverse;
+            align-items: flex-end;
+            
+            
+            li{
+                margin: 5px;
+                margin-right: 50px;
+                justify-content: space-around;
+                list-style: none;
+                a{
+                    font-family:$font;
+                    font-weight:$font-bold;
+                    color:$textoterceario;
+                    text-decoration: none;
+                    word-spacing: 1px;
+                    
+                }
+            }
+        }
+    }
+    .imageMainService{
+        @include imagenes;
+    }
+        
+
+}
+
+.mainSobreNosotros{
+    @extend .imageMainService;
+    background-image:url(../media/sobrenosotros.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0px;
+    div{
+        color: $texto;
+    }
+}
+.mainContacto{
+    @extend .imageMainService;
+    background-image:url(../media/coronasobreimplante.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0px;
+    @extend .mainServicios;
+        font-family:$font;
+        font-weight:$font-light;
+    section{ 
+        form{
+            fieldset{
+                label{
+                    font-family:$font;
+                    font-weight:$font-regular;
+                    color: $textoterceario;
+                
+                    }
+                }
+            }
+        }
+    }
+    
+    div{
+        font-family:$font;
+        font-weight:$font-regular;
+        color: $textoterceario
+    
+
+}  
+
+@mixin banner ($mi-ancho,$imagen) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height:$mi-ancho;
+    @if( $imagen==digitaldentristry){
+
+        background-image:url(../media/digitaldentistry.jpg);
+    }@else{
+        background-image: url(../media/sonrisa.jfif);
+    }
+        
+    
+    background-image:$imagen;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 60px;
+    padding: 0 20px;
+    
+    h3{
+        font-family: $font;
+        font-weight: $font-bold;
+    
+    }
+}
+    
+.Testimonios{
+            
+    @include banner(380px,digitaldentistry)
+    }
+
+/*operadores*/
+$ancho:100%;
+
+@for $i from 1 through 12{
+    .miCol-#{$i} {
+        width: ($ancho/12)*$i;
+    }
+}
+
+
+
+$font-sizes:(
+        "light":300,
+        "regular":400,
+        "medium":500,
+        "bold":700,
+        "black":800);
+@each $key, $val in $font-sizes{
+    .type-#{$key}{
+        font-weight: $val;
+    }
+}
+
+
+
+           
+
+    

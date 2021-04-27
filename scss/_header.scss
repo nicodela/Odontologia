@@ -1,0 +1,18 @@
+header{
+    background-color: $fondo;
+    color:$texto;
+    font-family:$font;
+    font-weight: $font-medium;
+    nav{
+        ul{
+            li{
+                a{
+                    background-color: $fondo;
+                    color:$texto;
+                    font-family:$font;
+                    font-weight: $font-regular
+                }
+            }
+        }
+    }
+}

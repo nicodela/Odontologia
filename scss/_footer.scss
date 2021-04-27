@@ -1,0 +1,75 @@
+#grid{
+    grid-template-columns: 33,3% 33,3% 33,4%;
+    grid-template-rows:15% 60% 30%;
+    grid-area:
+    "direccion menu redes"
+    ;
+    max-height: 2em;
+}
+
+footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 33.4% 33.3% 33.3%;
+    grid-template-areas: 
+    "ubicacion menu redes"
+    ;
+    background-color: lightgray;
+    .boxRight{
+        grid-area: redes;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .redesSociales{
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+            color: $texto;
+
+            
+            
+                
+            }
+
+        }
+    }
+    .boxCenter{
+        grid-area: menu;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .footerMenu ul{
+            display: flex;
+            flex-direction: column;
+                li{
+                list-style: none;
+                margin: 5px 0;
+                 a{
+                    text-decoration: none;
+                    color:$texto;
+                    font-family:$font;
+                    font-weight: $font-light;
+                }
+
+            }
+        }
+    }
+    
+    .boxLeft{
+        grid-area: ubicacion;
+        text-align: center;
+        .ubicacion{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: $font;
+            font-weight: 300;
+            }
+         
+}
+
+
+
+
+
+
