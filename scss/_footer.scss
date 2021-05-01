@@ -44,15 +44,19 @@ footer{
                 li{
                 list-style: none;
                 margin: 5px 0;
-                 a{
+                a{
                     text-decoration: none;
                     color:$texto;
                     font-family:$font;
                     font-weight: $font-light;
+                    .afooter:hover{
+                        color: rgba(12, 11, 11, 0.938);
+                        }
                 }
-
-            }
+        
         }
+        
+        }    
     }
     
     .boxLeft{

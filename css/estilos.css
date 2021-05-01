@@ -1,1 +1,314 @@
-body{font-family:"Roboto",sans-serif;font-weight:400}.type-light{font-family:"Roboto",sans-serif;font-weight:300}.type-regular{font-family:"Roboto",sans-serif;font-weight:400}.type-medium{font-family:"Roboto",sans-serif;font-weight:500}.type-bold{font-family:"Roboto",sans-serif;font-weight:700}.type-black{font-family:"Roboto",sans-serif;font-weight:900}header{background-color:#f9f9f9;color:#010307;font-family:"Roboto",sans-serif;font-weight:500}header nav ul li a{background-color:#f9f9f9;color:#010307;font-family:"Roboto",sans-serif;font-weight:400}header .logo:hover{transform:rotate(45deg)}#grid{grid-template-columns:33,3% 33,3% 33,4%;grid-template-rows:15% 60% 30%;grid-area:"direccion menu redes";max-height:2em}footer{grid-area:footer;display:grid;grid-template-columns:33.4% 33.3% 33.3%;grid-template-areas:"ubicacion menu redes";background-color:lightgray}footer .boxRight{grid-area:redes;display:flex;flex-direction:column;align-items:center}footer .boxRight .redesSociales{display:flex;flex-direction:column;margin:5px;color:#010307}.boxCenter{grid-area:menu;display:flex;flex-direction:column;align-items:center}.boxCenter .footerMenu ul{display:flex;flex-direction:column}.boxCenter .footerMenu ul li{list-style:none;margin:5px 0}.boxCenter .footerMenu ul li a{text-decoration:none;color:#010307;font-family:"Roboto",sans-serif;font-weight:300}.boxLeft{grid-area:ubicacion;text-align:center}.boxLeft .ubicacion{display:flex;flex-direction:column;align-items:center;font-family:"Roboto",sans-serif;font-weight:300}.mainServicios section ul,.mainContacto section ul{display:flex;flex-direction:column-reverse;align-items:flex-end}.mainServicios section ul li,.mainContacto section ul li{margin:5px;margin-right:50px;justify-content:space-around;list-style:none}.mainServicios section ul li a,.mainContacto section ul li a{font-family:"Roboto",sans-serif;font-weight:700;color:#3d89c7;text-decoration:none;word-spacing:1px}.mainServicios .imageMainService,.mainContacto .imageMainService,.mainServicios .mainSobreNosotros,.mainContacto .mainSobreNosotros,.mainServicios .mainContacto,.mainContacto .mainContacto{background-image:url(../media/carillas.jfif);background-size:cover;background-position:center;background-attachment:fixed;width:100%;height:100vh;margin-top:0px}.mainSobreNosotros{background-image:url(../media/sobrenosotros.jpg);background-size:cover;background-position:center;background-attachment:fixed;width:100%;height:100vh;margin-top:0px}.mainSobreNosotros div{color:#010307}.mainContacto{background-image:url(../media/coronasobreimplante.jpg);background-size:cover;background-position:center;background-attachment:fixed;width:100%;height:100vh;margin-top:0px;font-family:"Roboto",sans-serif;font-weight:300}.mainContacto section form fieldset label{font-family:"Roboto",sans-serif;font-weight:400;color:#3d89c7}div{font-family:"Roboto",sans-serif;font-weight:400;color:#3d89c7}.Testimonios{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-height:380px;background-image:url(../media/sonrisa.jfif);background-image:digitaldentistry;background-repeat:no-repeat;background-size:cover;background-position:center;margin-top:60px;padding:0 20px}.Testimonios h3{font-family:"Roboto",sans-serif;font-weight:700}.miCol-1{width:8.33333%}.miCol-2{width:16.66667%}.miCol-3{width:25%}.miCol-4{width:33.33333%}.miCol-5{width:41.66667%}.miCol-6{width:50%}.miCol-7{width:58.33333%}.miCol-8{width:66.66667%}.miCol-9{width:75%}.miCol-10{width:83.33333%}.miCol-11{width:91.66667%}.miCol-12{width:100%}.type-light{font-weight:300}.type-regular{font-weight:400}.type-medium{font-weight:500}.type-bold{font-weight:700}.type-black{font-weight:800}.pacientes .pacientes_julio{display:flex;flex-direction:column;align-items:flex-start;color:#010307;width:300px}.pacientes .pacientes_julio--mirta{display:flex;flex-direction:column;align-items:flex-start;width:300px}.box .box_1{font-family:"Roboto",sans-serif;font-weight:400;color:#010307;display:flex;flex-direction:column-reverse;align-items:center;justify-content:center}.box .box_1--2{font-family:"Roboto",sans-serif;font-weight:400;color:#3d89c7;display:flex;flex-direction:column-reverse;align-items:center;justify-content:center}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.type-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.type-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.type-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.type-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.type-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+header {
+  background-color: #f9f9f9;
+  color: #010307;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+header nav ul li a {
+  background-color: #f9f9f9;
+  color: #010307;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+header .logo:hover {
+  transform: rotate(45deg);
+}
+
+#grid {
+  grid-template-columns: 33,3% 33,3% 33,4%;
+  grid-template-rows: 15% 60% 30%;
+  grid-area: "direccion menu redes";
+  max-height: 2em;
+}
+
+footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 33.4% 33.3% 33.3%;
+  grid-template-areas: "ubicacion menu redes";
+  background-color: lightgray;
+}
+
+footer .boxRight {
+  grid-area: redes;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .boxRight .redesSociales {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  color: #010307;
+}
+
+.boxCenter {
+  grid-area: menu;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boxCenter .footerMenu ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.boxCenter .footerMenu ul li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+.boxCenter .footerMenu ul li a {
+  text-decoration: none;
+  color: #010307;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.boxCenter .footerMenu ul li a .afooter:hover {
+  color: rgba(12, 11, 11, 0.938);
+}
+
+.boxLeft {
+  grid-area: ubicacion;
+  text-align: center;
+}
+
+.boxLeft .ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.mainServicios section ul, .mainContacto section ul {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+.mainServicios section ul li, .mainContacto section ul li {
+  margin: 5px;
+  margin-right: 50px;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.mainServicios section ul li a, .mainContacto section ul li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #3d89c7;
+  text-decoration: none;
+  word-spacing: 1px;
+}
+
+.imageMainService, .mainSobreNosotros, .mainContacto {
+  background-image: url(../media/carillas.jfif);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  margin-top: 0px;
+}
+
+.aServi:hover {
+  color: rgba(255, 255, 255, 0.938);
+}
+
+.mainSobreNosotros {
+  background-image: url(../media/sobrenosotros.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  margin-top: 0px;
+}
+
+.mainSobreNosotros div {
+  color: #010307;
+}
+
+.mainContacto {
+  background-image: url(../media/coronasobreimplante.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  margin-top: 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.mainContacto section form fieldset label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #3d89c7;
+}
+
+div {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #3d89c7;
+}
+
+.Testimonios {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 380px;
+  background-image: url(../media/sonrisa.jfif);
+  background-image: digitaldentistry;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 60px;
+  padding: 0 20px;
+}
+
+.Testimonios h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+/*operadores*/
+.miCol-1 {
+  width: 8.33333%;
+}
+
+.miCol-2 {
+  width: 16.66667%;
+}
+
+.miCol-3 {
+  width: 25%;
+}
+
+.miCol-4 {
+  width: 33.33333%;
+}
+
+.miCol-5 {
+  width: 41.66667%;
+}
+
+.miCol-6 {
+  width: 50%;
+}
+
+.miCol-7 {
+  width: 58.33333%;
+}
+
+.miCol-8 {
+  width: 66.66667%;
+}
+
+.miCol-9 {
+  width: 75%;
+}
+
+.miCol-10 {
+  width: 83.33333%;
+}
+
+.miCol-11 {
+  width: 91.66667%;
+}
+
+.miCol-12 {
+  width: 100%;
+}
+
+.type-light {
+  font-weight: 300;
+}
+
+.type-regular {
+  font-weight: 400;
+}
+
+.type-medium {
+  font-weight: 500;
+}
+
+.type-bold {
+  font-weight: 700;
+}
+
+.type-black {
+  font-weight: 800;
+}
+
+.pacientes .pacientes_julio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #010307;
+  width: 300px;
+}
+
+.pacientes .pacientes_julio--mirta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+}
+
+.box .box_1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #010307;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.box .box_1--2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #3d89c7;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
