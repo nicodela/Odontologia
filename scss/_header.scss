@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 header{
+    display: flex;
+    flex-direction: row;
     background-color: $fondo;
     color:$texto;
     font-family:$font;
-    font-weight: $font-medium;
+    font-size: $font-medium;
     nav{
         ul{
+            
             li{
+               
                 a{
                     background-color: $fondo;
                     color:$texto;
@@ -18,4 +23,9 @@ header{
     .logo:hover{
         transform:rotate(45deg)
     }
+ @media screen { min-width: 736px;
+     
+ }
 }
+
+

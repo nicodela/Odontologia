@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 @mixin imagenes {
     background-image: url(../media/carillas.jfif);
     background-size: cover;
@@ -7,6 +7,9 @@
     width: 100%;
     height: 100vh;
     margin-top: 0px;
+}
+.mainindex{
+    background-color: lightgray;
 }
 .mainServicios{
     section{
@@ -20,6 +23,7 @@
             li{
                 margin: 5px;
                 margin-right: 50px;
+                margin-top: 20px;
                 justify-content: space-around;
                 list-style: none;
                 a{
@@ -59,12 +63,12 @@
 }
 .mainContacto{
     @extend .imageMainService;
-    background-image:url(../media/coronasobreimplante.jpg);
+    background-image:url(../media/hilodental.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin-top: 0px;
     @extend .mainServicios;
         font-family:$font;
@@ -75,10 +79,35 @@
                 label{
                     font-family:$font;
                     font-weight:$font-regular;
-                    color: $textoterceario;
+                    color: $texto;
                 
                     }
                 }
+            }
+        }
+    .section{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+            address{
+                display: flex;
+                flex-direction: column-reverse;
+                width: 100%;
+                ul{ align-self: center;
+                    li{
+                        font-size: $font-medium;
+                        color: $texto;
+                        a{  
+                        font-size: $font-medium;
+                        color: $texto;
+                        }
+                    }
+                }
+                iframe{
+                display: flex;
+                flex-direction: column-reverse;
+                width: 100%;
+                }       
             }
         }
     }
@@ -86,7 +115,7 @@
     div{
         font-family:$font;
         font-weight:$font-regular;
-        color: $textoterceario
+        color: $texto;
     
 
 }  
@@ -147,5 +176,148 @@ $font-sizes:(
     }
 }
 
+@mixin Ortodoncia {
+    background-image: url(../media/ortodonciacampestre.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0px;
+}
+.Ortodoncia{
+    @include Ortodoncia
+    
+    div{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        h3{
+            margin-top: 20px;
+            font-family: $font;
+            font-size: $font-bold;
+            color: $textosecundario;
+        }
+        p{
+            margin-top: 20px;
+            font-family: $font;
+            font-size: $font-medium;
+            color: $textosecundario;
+        }
+        
+    @media all and(max: widht 768px){
+        main{
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            align-self: center;
+        }
+    }
+    }
+    
+    }
+.mainInstalaciones{
+    display: flex;
+    flex-direction: column;
+    align-self:initial;
+    align-self: flex-start;
+    h3{
+        margin-top: 150px;
+    }
+    div{
+        margin-top: 20px;
+    }
+}
+    @mixin consultorio {
+        background-image: url(../media/sillon.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100vh;
+        margin-top: 0px;
+    }
 
+    .consultorio{
+        @include consultorio()
+        
+    }
 
+    @mixin implantes {
+        background-image: url(../media/vistaperfilsonrisa.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        width:100%;
+        height: 100vh;
+        margin-top: 0px;
+    }
+
+    .implantes{
+        @include implantes 
+            h3{
+                display:flex;
+                flex-direction:row;
+                align-items:center;
+                justify-content:center;
+                color:$textosecundario;
+            div{
+                display:flex;
+                flex-direction:row;
+                align-items:center;
+                justify-content:center;
+                color:$textosecundario;
+                }
+            }
+        
+        
+    }
+.mainEstetica{
+    @mixin Estetica {
+        background-image: url(/media/sonrisas.jpg);
+        background-size:contain;
+        background-position: center;
+        background-attachment: fixed;
+        width: 100%;
+        height: 50vh;
+        margin-top: 0px;
+    }
+    .Estetica{
+    @include Estetica
+    }
+    div{display: flex;
+        flex-direction: column;
+        background-color:rgb(219, 216, 216);
+        width: 100%;
+        align-self:center;
+        justify-content: center;
+        h3{
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-self:center;
+        justify-content: center
+        }
+        p{
+            margin-top: 0px;
+            display: flex;
+            flex-direction: column;
+            align-self:center;
+            justify-content: center
+
+        }
+    }
+    button{
+        background-color: black;
+        align-self: center;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        a{
+            font-family: $font;
+            font-size: $font-medium;
+            color: $textosecundario;
+        }
+    }
+}
+    

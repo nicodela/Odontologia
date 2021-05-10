@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -29,10 +33,12 @@ body {
 }
 
 header {
+  display: flex;
+  flex-direction: row;
   background-color: #f9f9f9;
   color: #010307;
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-size: 500;
 }
 
 header nav ul li a {
@@ -44,6 +50,12 @@ header nav ul li a {
 
 header .logo:hover {
   transform: rotate(45deg);
+}
+
+@media screen {
+  header {
+    min-width: 736px;
+  }
 }
 
 #grid {
@@ -58,7 +70,9 @@ footer {
   display: grid;
   grid-template-columns: 33.4% 33.3% 33.3%;
   grid-template-areas: "ubicacion menu redes";
-  background-color: lightgray;
+  background: linear-gradient(to top, gray, lightgray);
+  min-height: 200px;
+  justify-content: center;
 }
 
 footer .boxRight {
@@ -71,8 +85,9 @@ footer .boxRight {
 footer .boxRight .redesSociales {
   display: flex;
   flex-direction: column;
-  margin: 5px;
+  margin: 20px;
   color: #010307;
+  width: 40px;
 }
 
 .boxCenter {
@@ -113,7 +128,13 @@ footer .boxRight .redesSociales {
   flex-direction: column;
   align-items: center;
   font-family: "Roboto", sans-serif;
+  color: #010307;
   font-weight: 300;
+  margin-top: 5px;
+}
+
+.mainindex {
+  background-color: lightgray;
 }
 
 .mainServicios section ul, .mainContacto section ul {
@@ -125,6 +146,7 @@ footer .boxRight .redesSociales {
 .mainServicios section ul li, .mainContacto section ul li {
   margin: 5px;
   margin-right: 50px;
+  margin-top: 20px;
   justify-content: space-around;
   list-style: none;
 }
@@ -166,12 +188,12 @@ footer .boxRight .redesSociales {
 }
 
 .mainContacto {
-  background-image: url(../media/coronasobreimplante.jpg);
+  background-image: url(../media/hilodental.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin-top: 0px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -180,13 +202,45 @@ footer .boxRight .redesSociales {
 .mainContacto section form fieldset label {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #3d89c7;
+  color: #010307;
+}
+
+.mainContacto .section {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+
+.mainContacto .section address {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+
+.mainContacto .section address ul {
+  align-self: center;
+}
+
+.mainContacto .section address ul li {
+  font-size: 500;
+  color: #010307;
+}
+
+.mainContacto .section address ul li a {
+  font-size: 500;
+  color: #010307;
+}
+
+.mainContacto .section address iframe {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
 }
 
 div {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #3d89c7;
+  color: #010307;
 }
 
 .Testimonios {
@@ -276,6 +330,145 @@ div {
 
 .type-black {
   font-weight: 800;
+}
+
+.Ortodoncia {
+  background-image: url(../media/ortodonciacampestre.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  margin-top: 0px;
+}
+
+.Ortodoncia div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Ortodoncia div h3 {
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 700;
+  color: #fff;
+}
+
+.Ortodoncia div p {
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 500;
+  color: #fff;
+}
+
+@media all and (max: widht 768px) {
+  .Ortodoncia div main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+  }
+}
+
+.mainInstalaciones {
+  display: flex;
+  flex-direction: column;
+  align-self: initial;
+  align-self: flex-start;
+}
+
+.mainInstalaciones h3 {
+  margin-top: 150px;
+}
+
+.mainInstalaciones div {
+  margin-top: 20px;
+}
+
+.consultorio {
+  background-image: url(../media/sillon.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  margin-top: 0px;
+}
+
+.implantes {
+  background-image: url(../media/vistaperfilsonrisa.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  margin-top: 0px;
+}
+
+.implantes h3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.implantes h3 div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.mainEstetica .Estetica {
+  background-image: url(/media/sonrisas.jpg);
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 50vh;
+  margin-top: 0px;
+}
+
+.mainEstetica div {
+  display: flex;
+  flex-direction: column;
+  background-color: #dbd8d8;
+  width: 100%;
+  align-self: center;
+  justify-content: center;
+}
+
+.mainEstetica div h3 {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+.mainEstetica div p {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+.mainEstetica button {
+  background-color: black;
+  align-self: center;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainEstetica button a {
+  font-family: "Roboto", sans-serif;
+  font-size: 500;
+  color: #fff;
 }
 
 .pacientes .pacientes_julio {
