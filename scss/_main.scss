@@ -274,7 +274,7 @@ $font-sizes:(
     }
 .mainEstetica{
     @mixin Estetica {
-        background-image: url(/media/sonrisas.jpg);
+        background-image: url(../media/sonrisas.jpg);
         background-size:contain;
         background-position: center;
         background-attachment: fixed;
